@@ -13,5 +13,16 @@ int x = 250;
  }  
  class Bacteria    
  {     
- 	//lots of java!   
+ 	int myX, myY, myColor;
+ 	Bacteria() {
+ 		myX = 250;
+ 		myY = 250;
+ 		myColor = (int)(Math.random()*255);
+ 	}
  }    
+ void move() {
+
+ }
+ void show() {
+
+ }
