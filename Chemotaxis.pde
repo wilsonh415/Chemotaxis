@@ -1,23 +1,24 @@
-int x = 150;
-int x2 = 250;
-int x3 = 350;
+int x = 250;
+int size1 = 15;
+Bacteria [] colony;
  void setup()   
  {     
  	size(500,500);
- 	background(125); 
+ 	background(125);  
+ 	colony = new Bacteria[50];
+ 	for(int i = 5; i < colony.length; i++)
+ 	{
+ 		ellipse(i, i, 15 ,15);
+ 		colony[i] = new Bacteria();
+ 	}
+
  }
  void draw()   
  {    
  	background(125);
- 	fill(0,0, 250);
- 	ellipse(x, x, 20, 20);
+ 	fill(0,255,0);
+ 	ellipse(x, x, size1, size1);
  	x = x + (int)((Math.random()*4)-2);
- 	fill(0,170,0);
- 	ellipse(x2, x2, 20, 20); 
- 	x2= x2 + (int)((Math.random()*4)-2);
- 	fill(250,0,0);
- 	ellipse(x3, x3, 20, 20);
- 	x3 = x3 + (int)((Math.random()*4)-2);
  }  
  class Bacteria    
  {     
@@ -29,8 +30,8 @@ int x3 = 350;
  	}
  }
  void move() {
-
+ 	x = x + (int)((Math.random()*4)-2);
  }
  void show() {
-
+ 	ellipse(x, x, 15, 15);
  }
