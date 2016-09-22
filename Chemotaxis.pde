@@ -12,6 +12,8 @@ Bacteria [] colony;
  }
  void draw()   
  {    
+ 	fill(0,255,0);
+ 	ellipse(myX, myY, 15, 15);
 	for(int i = 0; i < colony.length; i++)
  	{
  		colony[i].move();
