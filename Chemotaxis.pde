@@ -29,7 +29,7 @@ Bacteria [] colony;
  		myColor = (int)(Math.random()*255);
  	}
  void move() {
- 	myX = myX + (int)((Math.random()*30)-14);
+ 	myX = myX + (int)((Math.random()*30)-15);
  }
  void show() {
  fill(0,255,0);
