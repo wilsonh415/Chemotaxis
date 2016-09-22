@@ -8,17 +8,19 @@ Bacteria [] colony;
  	colony = new Bacteria[50];
  	for(int i = 5; i < colony.length; i++)
  	{
- 		ellipse(i, i, 15 ,15);
  		colony[i] = new Bacteria();
  	}
 
  }
  void draw()   
  {    
- 	background(125);
- 	fill(0,255,0);
- 	ellipse(x, x, size1, size1);
- 	x = x + (int)((Math.random()*4)-2);
+ background(125);
+	for(int i = 5; i < colony.length; i++)
+ 	{
+ 		colony[i].move();
+ 		colony[i].show();
+ 	}
+
  }  
  class Bacteria    
  {     
@@ -33,5 +35,6 @@ Bacteria [] colony;
  	x = x + (int)((Math.random()*4)-2);
  }
  void show() {
- 	ellipse(x, x, 15, 15);
+ fill(0,255,0);
+ 	ellipse(x, x, size1, size1);
  }
