@@ -4,8 +4,8 @@ Bacteria [] colony;
  void setup()   
  {     
  	size(500,500);
- 	background(125);  
- 	colony = new Bacteria[50];
+ 	background(0);  
+ 	colony = new Bacteria[20];
  	for(int i = 250; i < colony.length; i++)
  	{
  		colony[i] = new Bacteria();
@@ -27,8 +27,8 @@ Bacteria [] colony;
  {     
  	int myX, myY, myColor;
  	Bacteria() {
- 		myX = 250;
- 		myY = 250;
+ 		myX = (int)(Math.random()*500);
+ 		myY = (int)(Math.random()*500);
  		myColor = (int)(Math.random()*255);
  	}
  }
