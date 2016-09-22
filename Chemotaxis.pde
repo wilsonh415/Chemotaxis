@@ -4,7 +4,7 @@ Bacteria [] colony;
  void setup()   
  {     
  	size(500,500);
- 	background(0);  
+ 	background(125);  
  	colony = new Bacteria[20];
  	for(int i = 250; i < colony.length; i++)
  	{
