@@ -14,7 +14,7 @@ Bacteria [] colony;
  }
  void draw()   
  {    
-  	fill(0,255,0);
+  	fill(myColor);
  	ellipse(x, x, size1, size1);
 	for(int i = 250; i < colony.length; i++)
  	{
@@ -33,9 +33,9 @@ Bacteria [] colony;
  	}
  }
  void move() {
- 	x = x + (int)((Math.random()*4)-2);
+ 	x = x + (int)((Math.random()*20)-10);
  }
  void show() {
- fill(0,255,0);
+ fill(myColor);
  ellipse(x, x, size1, size1);
  }
