@@ -2,7 +2,7 @@ Bacteria [] colony;
  void setup()   
  {     
  	size(500,500);
- 	background(0);  
+ 	background(125);  
  	colony = new Bacteria[20];
  	for(int i = 0; i < colony.length; i++)
  	{
@@ -33,5 +33,5 @@ Bacteria [] colony;
  }
  void show() {
  fill(0,255,0);
- ellipse(i, myY, 15, 15);
+ ellipse(myX, myY, 15, 15);
  }
