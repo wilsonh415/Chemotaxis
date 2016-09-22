@@ -4,7 +4,7 @@ Bacteria [] colony;
  void setup()   
  {     
  	size(500,500);
- 	background(0);  
+ 	background(125);  
  	colony = new Bacteria[50];
  	for(int i = 250; i < colony.length; i++)
  	{
@@ -14,6 +14,8 @@ Bacteria [] colony;
  }
  void draw()   
  {    
+  	fill(0,255,0);
+ 	ellipse(x, x, size1, size1);
 	for(int i = 250; i < colony.length; i++)
  	{
  		colony[i].move();
