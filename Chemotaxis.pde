@@ -12,6 +12,7 @@ Bacteria [] colony;
  }
  void draw()   
  {    
+ 	background(125);
 	for(int i = 0; i < colony.length; i++)
  	{
  		colony[i].move();
